@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3789086865537536716}
   - component: {fileID: 4767157534068233413}
   - component: {fileID: 1632820415791358319}
-  m_Layer: 0
+  - component: {fileID: 1959807470111418670}
+  m_Layer: 10
   m_Name: aqueduct (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1959807470111418670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707670934638435843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887233, y: 1.8796997, z: 1.0964929}
+  m_Center: {x: 0.09595584, y: 0.7429609, z: -0.0076236734}
 --- !u!1 &2476816402589451158
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +104,8 @@ GameObject:
   - component: {fileID: 2321230527204602877}
   - component: {fileID: 7966834899086337109}
   - component: {fileID: 7335458679222944466}
-  m_Layer: 0
+  - component: {fileID: 6402295969743673360}
+  m_Layer: 10
   m_Name: aqueduct (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,6 +173,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6402295969743673360
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2476816402589451158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887233, y: 1.8796997, z: 1.0964929}
+  m_Center: {x: 0.095956795, y: 0.7429609, z: -0.0076236734}
 --- !u!1 &2625097056349602995
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +197,8 @@ GameObject:
   - component: {fileID: 8495073207045789531}
   - component: {fileID: 8890683481706286982}
   - component: {fileID: 4628637901468967734}
-  m_Layer: 0
+  - component: {fileID: 154295171264090522}
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,6 +264,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &154295171264090522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2625097056349602995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8053458, y: 9.599999, z: 1.8468834}
+  m_Center: {x: 0.29217812, y: 4.7999997, z: -0.575791}
 --- !u!1 &3756249021540268507
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +288,8 @@ GameObject:
   - component: {fileID: 1651425423493419542}
   - component: {fileID: 9207810923936978755}
   - component: {fileID: 6794033541282068287}
-  m_Layer: 0
+  - component: {fileID: 4136181356861546089}
+  m_Layer: 10
   m_Name: aqueduct (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,6 +357,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4136181356861546089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3756249021540268507}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887233, y: 1.8796997, z: 1.0964929}
+  m_Center: {x: 0.09595775, y: 0.7429609, z: -0.0076236734}
 --- !u!1 &4044271085187168679
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +381,7 @@ GameObject:
   - component: {fileID: 5449849301085807995}
   - component: {fileID: 3395877307518512105}
   - component: {fileID: 189022913532837059}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +458,8 @@ GameObject:
   - component: {fileID: 7598554057522137246}
   - component: {fileID: 6839581332785622063}
   - component: {fileID: 8894828725487702353}
-  m_Layer: 0
+  - component: {fileID: 9051843281137770554}
+  m_Layer: 10
   m_Name: aqueduct (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,6 +527,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &9051843281137770554
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4124529880178251075}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887257, y: 1.8796997, z: 1.096493}
+  m_Center: {x: 0.09595587, y: 0.7429609, z: -0.007623853}
 --- !u!1 &4360950942394711232
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2415803694699120751}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +597,7 @@ GameObject:
   - component: {fileID: 414403387791118979}
   - component: {fileID: 2546106506754754804}
   - component: {fileID: 4622774111404486658}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +688,8 @@ GameObject:
   - component: {fileID: 1660404724884559973}
   - component: {fileID: 4479558480446804207}
   - component: {fileID: 675196901404894655}
-  m_Layer: 0
+  - component: {fileID: 7517849433069354831}
+  m_Layer: 10
   m_Name: aqueduct (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -686,6 +757,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7517849433069354831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4897090234373075596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887257, y: 1.8796997, z: 1.096493}
+  m_Center: {x: 0.09595492, y: 0.7429609, z: -0.0076236743}
 --- !u!1 &5362439178828976312
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +781,8 @@ GameObject:
   - component: {fileID: 6388350334996606520}
   - component: {fileID: 8210246169015566642}
   - component: {fileID: 8194731174003826996}
-  m_Layer: 0
+  - component: {fileID: 4048524819788516717}
+  m_Layer: 10
   m_Name: aqueduct (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,6 +850,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4048524819788516717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5362439178828976312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887257, y: 1.8796997, z: 1.096493}
+  m_Center: {x: 0.09595587, y: 0.7429609, z: -0.0076227207}
 --- !u!1 &5754272699735990324
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +874,7 @@ GameObject:
   - component: {fileID: 1124827860948598699}
   - component: {fileID: 5244216925996979950}
   - component: {fileID: 4130336391484782454}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -854,7 +952,8 @@ GameObject:
   - component: {fileID: 7638602418437828269}
   - component: {fileID: 37477863934025505}
   - component: {fileID: 5403426988046058371}
-  m_Layer: 0
+  - component: {fileID: 7507302915462263664}
+  m_Layer: 10
   m_Name: aqueduct (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -922,6 +1021,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7507302915462263664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245559120096195361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887233, y: 1.8796997, z: 1.0964929}
+  m_Center: {x: 0.09595775, y: 0.7429609, z: -0.0076236734}
 --- !u!1 &6267954385811351901
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +1045,8 @@ GameObject:
   - component: {fileID: 2193882876912905508}
   - component: {fileID: 7063313838921206367}
   - component: {fileID: 9107611426398757683}
-  m_Layer: 0
+  - component: {fileID: 6863295661235135778}
+  m_Layer: 10
   m_Name: aqueduct (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,6 +1114,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6863295661235135778
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6267954385811351901}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887257, y: 1.8796997, z: 1.096493}
+  m_Center: {x: 0.09595492, y: 0.7429609, z: -0.0076227207}
+--- !u!65 &3275597743097754568
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788803981647203688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2531338, y: 0.78320694, z: 1.2531356}
+  m_Center: {x: 0.02051112, y: 0.34916878, z: 0.068017505}
 --- !u!1 &6798205951825899195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,7 +1151,8 @@ GameObject:
   - component: {fileID: 699786087929877443}
   - component: {fileID: 6572631463216013845}
   - component: {fileID: 3213460113029452457}
-  m_Layer: 0
+  - component: {fileID: 8387363112629137887}
+  m_Layer: 10
   m_Name: aqueduct (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,6 +1220,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8387363112629137887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6798205951825899195}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887257, y: 1.8796997, z: 1.096493}
+  m_Center: {x: 0.09595492, y: 0.7429609, z: -0.0076227207}
 --- !u!1 &7013074102805807534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1244,8 @@ GameObject:
   - component: {fileID: 598626754632094499}
   - component: {fileID: 7800312462895832268}
   - component: {fileID: 1313008961564429022}
-  m_Layer: 0
+  - component: {fileID: 8046189381746670911}
+  m_Layer: 10
   m_Name: aqueduct (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1159,6 +1313,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8046189381746670911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013074102805807534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887233, y: 1.8796997, z: 1.0964929}
+  m_Center: {x: 0.0959587, y: 0.7429609, z: -0.0076236734}
+--- !u!65 &6056309268498181513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8223651833871896458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0726843, y: 1.5664177, z: 2.8195503}
+  m_Center: {x: 0.043856513, y: 0.74077415, z: 0.008718552}
 --- !u!1 &8317029547711647150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,9 +1350,10 @@ GameObject:
   - component: {fileID: 4540213198920737920}
   - component: {fileID: 9041189001575127490}
   - component: {fileID: 990381256005807698}
-  m_Layer: 0
+  - component: {fileID: 4132210652341513593}
+  m_Layer: 10
   m_Name: Chunk_04_1_1_1_1
-  m_TagString: Untagged
+  m_TagString: Chunk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1243,6 +1424,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4132210652341513593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8317029547711647150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8717806682167518314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1448,8 @@ GameObject:
   - component: {fileID: 4161374428785988023}
   - component: {fileID: 1982987748869322679}
   - component: {fileID: 6154712305599852104}
-  m_Layer: 0
+  - component: {fileID: 4718320887007471009}
+  m_Layer: 10
   m_Name: aqueduct (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,6 +1517,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4718320887007471009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8717806682167518314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.9887233, y: 1.8796997, z: 1.0964929}
+  m_Center: {x: 0.095955364, y: 0.7429609, z: -0.0076236734}
+--- !u!65 &3134839113755535690
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8969008728287273755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2531338, y: 0.78320694, z: 1.2531356}
+  m_Center: {x: 0.02051112, y: 0.34916878, z: 0.068017505}
 --- !u!1001 &4243905917099689813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1329,6 +1550,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4540213198920737920}
     m_Modifications:
+    - target: {fileID: 100000, guid: 4e3b8318a9112f24d84095e1a4d96ae0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4e3b8318a9112f24d84095e1a4d96ae0, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.7072192
@@ -1391,6 +1616,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 3d297aa470482cb4393b22ed578eb87f, type: 3}
       propertyPath: m_Name
       value: road_square_mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3d297aa470482cb4393b22ed578eb87f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3d297aa470482cb4393b22ed578eb87f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1467,6 +1696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e7d54fb21305f134d929a50188e9ed4b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e7d54fb21305f134d929a50188e9ed4b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.342
@@ -1521,6 +1754,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d54fb21305f134d929a50188e9ed4b, type: 3}
+--- !u!1 &6788803981647203688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e7d54fb21305f134d929a50188e9ed4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6788803981647236040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6788803981646844232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e7d54fb21305f134d929a50188e9ed4b,
@@ -1537,6 +1776,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4e3b8318a9112f24d84095e1a4d96ae0, type: 3}
       propertyPath: m_Name
       value: Prop_Dumpster (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4e3b8318a9112f24d84095e1a4d96ae0, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4e3b8318a9112f24d84095e1a4d96ae0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1600,6 +1843,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c89945e8bbc668d449a688c3d7623b61, type: 3}
       propertyPath: m_Name
       value: table
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c89945e8bbc668d449a688c3d7623b61, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c89945e8bbc668d449a688c3d7623b61, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1665,6 +1912,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8223651833871927594}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8223651833871896458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: c89945e8bbc668d449a688c3d7623b61,
+    type: 3}
+  m_PrefabInstance: {fileID: 8223651833871927594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8969008728287307195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1675,6 +1928,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e7d54fb21305f134d929a50188e9ed4b, type: 3}
       propertyPath: m_Name
       value: chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e7d54fb21305f134d929a50188e9ed4b, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e7d54fb21305f134d929a50188e9ed4b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1730,6 +1987,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d54fb21305f134d929a50188e9ed4b, type: 3}
+--- !u!1 &8969008728287273755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e7d54fb21305f134d929a50188e9ed4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8969008728287307195}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8969008728287706939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e7d54fb21305f134d929a50188e9ed4b,

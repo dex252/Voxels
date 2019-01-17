@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1905186616352541584}
   - component: {fileID: 3837913982040824226}
   - component: {fileID: 2651232891624019014}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3122431080282934606}
   - component: {fileID: 8025013799346122102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road01A (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ BoxCollider:
   m_GameObject: {fileID: 1146696176472451854}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.35, y: 0.3, z: 4.5}
   m_Center: {x: 0, y: 0.15, z: 0}
@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 1362480759985089803}
   - component: {fileID: 2844427987884362910}
   - component: {fileID: 7615845043731353087}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chunk_02_0_0_1_1
-  m_TagString: Untagged
+  m_TagString: Chunk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 3918450762295963666}
   - component: {fileID: 2347272460462807912}
   - component: {fileID: 8340306187848467660}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 392310455596639489}
   - component: {fileID: 2130736165060839885}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road01A (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ BoxCollider:
   m_GameObject: {fileID: 5001090433108629663}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.35, y: 0.3, z: 4.5}
   m_Center: {x: 0, y: 0.15, z: 0}
@@ -353,7 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4521835401108175550}
   - component: {fileID: 6170862675837380788}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road01A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ BoxCollider:
   m_GameObject: {fileID: 5044020630696875413}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.35, y: 0.3, z: 4.5}
   m_Center: {x: 0, y: 0.15, z: 0}
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 3291208993407337661}
   - component: {fileID: 7170760739430681231}
   - component: {fileID: 4303392097735113718}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,6 +476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Apartment (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.307
@@ -550,6 +554,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
       propertyPath: m_Name
       value: Building_Apartment (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -626,6 +634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Apartment (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.305
@@ -701,6 +713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_Apartment
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6aad3078276ab4d47916c4d88e1722cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.307
@@ -775,6 +791,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 3d297aa470482cb4393b22ed578eb87f, type: 3}
       propertyPath: m_Name
       value: road_square_mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3d297aa470482cb4393b22ed578eb87f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3d297aa470482cb4393b22ed578eb87f, type: 3}
       propertyPath: m_LocalPosition.x

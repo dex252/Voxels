@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1581995607235762071}
   - component: {fileID: 6142352354952415105}
   - component: {fileID: 7854107056081141350}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,9 +89,9 @@ GameObject:
   - component: {fileID: 5946686645591075862}
   - component: {fileID: 4670421825671425551}
   - component: {fileID: 3097677316668265230}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chunk_10_0_0_0_0
-  m_TagString: Untagged
+  m_TagString: Chunk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,7 +192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1260771144046251307}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cloud02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 294008111169797893}
   - component: {fileID: 8149120938446965497}
   - component: {fileID: 8022722780982740708}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 3773831806096804346}
   - component: {fileID: 8466334679426092622}
   - component: {fileID: 185440086485483063}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 6584529448444220692}
   - component: {fileID: 74687557432799890}
   - component: {fileID: 5567961861275325977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_damage (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 6847314628871553465}
   - component: {fileID: 6238715659397839926}
   - component: {fileID: 7358253387977237835}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_damaged_Iron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,7 +531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6680739543105750107}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 6285200547488816190}
   - component: {fileID: 2213775118311755498}
   - component: {fileID: 2888005023871082708}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +642,7 @@ GameObject:
   - component: {fileID: 5689430755054172146}
   - component: {fileID: 3658986762550050969}
   - component: {fileID: 7089588469734309055}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7305413457584181442}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tree07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,7 +748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8612616562053492737}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Garden01D (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 8015348192458188438}
   - component: {fileID: 3485900892338718703}
   - component: {fileID: 8414515860800764687}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,7 +856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8520306170962233767}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Garden01D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4795607317362229733}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Garden01D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -918,7 +918,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638579565252925794}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tree07 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 4849319142492675411}
   - component: {fileID: 8751989824509150513}
   - component: {fileID: 3867903101516264195}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 8242006275545555835}
   - component: {fileID: 3422927234337787657}
   - component: {fileID: 6865297793089940048}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_damage (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1103,7 +1103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3687703913003317795}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1140,8 @@ GameObject:
   - component: {fileID: 5690610417467551164}
   - component: {fileID: 910101819051636454}
   - component: {fileID: 6097110339657267502}
-  m_Layer: 0
+  - component: {fileID: 6801077337417729924}
+  m_Layer: 10
   m_Name: Tree_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1206,6 +1207,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6801077337417729924
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4670391015097433700}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0101194, y: 10, z: 0.78339154}
+  m_Center: {x: -0.54122514, y: 5, z: 0.019262517}
 --- !u!1 &5256907855362942434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,7 +1231,7 @@ GameObject:
   - component: {fileID: 7744049131674056276}
   - component: {fileID: 4200424010013439167}
   - component: {fileID: 8543981160441540872}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_Iron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1294,7 +1308,7 @@ GameObject:
   - component: {fileID: 6779754756248428290}
   - component: {fileID: 9097851010172819423}
   - component: {fileID: 8791893434636984306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_damage (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1371,7 +1385,7 @@ GameObject:
   - component: {fileID: 7320336405151671498}
   - component: {fileID: 1960657681361268079}
   - component: {fileID: 3647477927929088500}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1448,7 +1462,7 @@ GameObject:
   - component: {fileID: 4160367361202937895}
   - component: {fileID: 6536004993216021378}
   - component: {fileID: 2590546438279889987}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1525,7 +1539,8 @@ GameObject:
   - component: {fileID: 663717532604839989}
   - component: {fileID: 4017722577915131814}
   - component: {fileID: 8132722179729225733}
-  m_Layer: 0
+  - component: {fileID: 7939355827335663890}
+  m_Layer: 10
   m_Name: Tree_Stump_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1591,6 +1606,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7939355827335663890
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5901575646693337689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5999998, y: 1.1999999, z: 1.1999999}
+  m_Center: {x: -0.59888, y: 0.59999996, z: 0}
 --- !u!1 &6087473471739615169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1630,7 @@ GameObject:
   - component: {fileID: 6974822823470866546}
   - component: {fileID: 5824643985927312988}
   - component: {fileID: 8089594152980474447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1679,7 +1707,8 @@ GameObject:
   - component: {fileID: 3882084982842566140}
   - component: {fileID: 5965607052792385218}
   - component: {fileID: 2966138451207425448}
-  m_Layer: 0
+  - component: {fileID: 2309792779361208570}
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1745,6 +1774,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2309792779361208570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6293910659122693884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.5, y: 5, z: 7.5}
+  m_Center: {x: 0.000000029802322, y: 2.5, z: 0}
 --- !u!1 &6481315052453919463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,7 +1798,7 @@ GameObject:
   - component: {fileID: 2657573183159790623}
   - component: {fileID: 136184613121666742}
   - component: {fileID: 608485523072447582}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1831,7 +1873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 819399402120641502}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Garden01D (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1864,7 +1906,7 @@ GameObject:
   - component: {fileID: 3458731264600645736}
   - component: {fileID: 4265192740793155566}
   - component: {fileID: 8479710115158067665}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1939,7 +1981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3014711527210088649}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Garden01D (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1970,7 +2012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3938765594472839565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_Iron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2005,7 +2047,7 @@ GameObject:
   - component: {fileID: 8007690630619934602}
   - component: {fileID: 6749147549381660821}
   - component: {fileID: 7930945616863243315}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tree_Stump_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2082,7 +2124,8 @@ GameObject:
   - component: {fileID: 2347977394179966904}
   - component: {fileID: 296653648294719626}
   - component: {fileID: 5976683253677862753}
-  m_Layer: 0
+  - component: {fileID: 3978952212697455472}
+  m_Layer: 10
   m_Name: Tree_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2148,3 +2191,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3978952212697455472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8809273895544444038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6156366, y: 9.999999, z: 1.0361558}
+  m_Center: {x: -0.56621176, y: 4.9999995, z: -0.016680913}

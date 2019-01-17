@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &3770274819884537410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883820150019473367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 5.7, y: 9.600001, z: 5.9999995}
+  m_Center: {x: 0, y: 4.8000007, z: 0}
+--- !u!65 &5653669094335969982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367233877917112360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5999998, y: 1.1999999, z: 1.1999999}
+  m_Center: {x: -0.59888, y: 0.59999996, z: 0}
 --- !u!1 &1797084967455432114
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +37,7 @@ GameObject:
   - component: {fileID: 4654774432462988814}
   - component: {fileID: 3481465377109680229}
   - component: {fileID: 1460823417504190776}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 494631902028644779}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 773786415472878001}
   - component: {fileID: 3554873109654337344}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road01A (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +176,7 @@ BoxCollider:
   m_GameObject: {fileID: 3964716243587284349}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.35, y: 0.3, z: 4.5}
   m_Center: {x: 0, y: 0.15, z: 0}
@@ -165,7 +191,7 @@ GameObject:
   - component: {fileID: 7130781718558364056}
   - component: {fileID: 141378704869510989}
   - component: {fileID: 1528558682728301226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +268,7 @@ GameObject:
   - component: {fileID: 1205702432216310215}
   - component: {fileID: 2292310539395914267}
   - component: {fileID: 1980246124952352810}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,9 +346,9 @@ GameObject:
   - component: {fileID: 1654909672231693697}
   - component: {fileID: 8670402340670798795}
   - component: {fileID: 8979805955377492289}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chunk_01_1_1_0_0
-  m_TagString: Untagged
+  m_TagString: Chunk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,7 +448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2084639371041365303}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Garden01D (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7487429107668413582}
   - component: {fileID: 6015274566101337138}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road01A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +510,7 @@ BoxCollider:
   m_GameObject: {fileID: 4518186794310422589}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.35, y: 0.3, z: 4.5}
   m_Center: {x: 0, y: 0.15, z: 0}
@@ -499,7 +525,7 @@ GameObject:
   - component: {fileID: 4010145002221014988}
   - component: {fileID: 152905767591239716}
   - component: {fileID: 5325813734389399233}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1_damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,6 +591,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4490355635479867496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728623478141691056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 5.7, y: 9.600001, z: 5.9999995}
+  m_Center: {x: 0, y: 4.8000007, z: 0.0000009536743}
 --- !u!1 &6020910840953528684
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +615,7 @@ GameObject:
   - component: {fileID: 2071330121373657535}
   - component: {fileID: 5095468515091610149}
   - component: {fileID: 8958231234231443260}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +692,7 @@ GameObject:
   - component: {fileID: 3311833250187067074}
   - component: {fileID: 1812110376885585486}
   - component: {fileID: 7967200486688051615}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,7 +769,7 @@ GameObject:
   - component: {fileID: 6605189116408930258}
   - component: {fileID: 7578383096082488559}
   - component: {fileID: 1456177275662128863}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6251159267598788565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +878,8 @@ GameObject:
   - component: {fileID: 5864157349416131079}
   - component: {fileID: 518292651667669481}
   - component: {fileID: 7819702596675626081}
-  m_Layer: 0
+  - component: {fileID: 4531946475259414549}
+  m_Layer: 10
   m_Name: Tree_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,6 +945,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4531946475259414549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6890454471003299619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 5.2, y: 9.999999, z: 5.2}
+  m_Center: {x: 0, y: 4.9999995, z: 5.6843413e-13}
 --- !u!1 &7696669082185761617
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,7 +968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6515713850646704645}
   - component: {fileID: 6856454965991499080}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road01A (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -946,7 +999,7 @@ BoxCollider:
   m_GameObject: {fileID: 7696669082185761617}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.35, y: 0.3, z: 4.5}
   m_Center: {x: 0, y: 0.15, z: 0}
@@ -960,6 +1013,10 @@ PrefabInstance:
     - target: {fileID: 1940762824515868, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
       propertyPath: m_Name
       value: Tree07 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940762824515868, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4076217895820424, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1017,11 +1074,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.21844
       objectReference: {fileID: 0}
+    - target: {fileID: 1103897792773046, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
 --- !u!4 &886757292597663977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4076217895820424, guid: bb2e57a5c4c104ff79b156f77695bc46,
+    type: 3}
+  m_PrefabInstance: {fileID: 882738801635509345}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &883820150019473367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1103897792773046, guid: bb2e57a5c4c104ff79b156f77695bc46,
     type: 3}
   m_PrefabInstance: {fileID: 882738801635509345}
   m_PrefabAsset: {fileID: 0}
@@ -1035,6 +1102,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 1ba91fcefc84f2444aeb488ca28fa8c9, type: 3}
       propertyPath: m_Name
       value: Tree_Stump_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1ba91fcefc84f2444aeb488ca28fa8c9, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1ba91fcefc84f2444aeb488ca28fa8c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1090,6 +1161,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba91fcefc84f2444aeb488ca28fa8c9, type: 3}
+--- !u!1 &1367233877917112360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 1ba91fcefc84f2444aeb488ca28fa8c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1367233877917081224}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1367233877917467656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1ba91fcefc84f2444aeb488ca28fa8c9,
@@ -1106,6 +1183,10 @@ PrefabInstance:
     - target: {fileID: 1148435925991490, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_Name
       value: Garden01D
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148435925991490, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4418049690190814, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1159,6 +1240,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09980039
       objectReference: {fileID: 0}
+    - target: {fileID: 1642468740499368, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
 --- !u!4 &1873840419492989466 stripped
@@ -1177,6 +1262,10 @@ PrefabInstance:
     - target: {fileID: 1148435925991490, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_Name
       value: Garden01D (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148435925991490, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4418049690190814, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1230,6 +1319,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.099800445
       objectReference: {fileID: 0}
+    - target: {fileID: 1642468740499368, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
 --- !u!4 &2259718251636155085 stripped
@@ -1248,6 +1341,10 @@ PrefabInstance:
     - target: {fileID: 1148435925991490, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_Name
       value: Garden01D (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148435925991490, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4418049690190814, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1301,6 +1398,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.099800445
       objectReference: {fileID: 0}
+    - target: {fileID: 1642468740499368, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
 --- !u!4 &4184758874313268674 stripped
@@ -1319,6 +1420,10 @@ PrefabInstance:
     - target: {fileID: 1940762824515868, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
       propertyPath: m_Name
       value: Tree07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940762824515868, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4076217895820424, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1376,11 +1481,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.21843731
       objectReference: {fileID: 0}
+    - target: {fileID: 1103897792773046, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb2e57a5c4c104ff79b156f77695bc46, type: 3}
 --- !u!4 &5732440223718196110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4076217895820424, guid: bb2e57a5c4c104ff79b156f77695bc46,
+    type: 3}
+  m_PrefabInstance: {fileID: 5729637893158690566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5728623478141691056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1103897792773046, guid: bb2e57a5c4c104ff79b156f77695bc46,
     type: 3}
   m_PrefabInstance: {fileID: 5729637893158690566}
   m_PrefabAsset: {fileID: 0}
@@ -1394,6 +1509,10 @@ PrefabInstance:
     - target: {fileID: 1148435925991490, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_Name
       value: Garden01D (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148435925991490, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4418049690190814, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1446,6 +1565,10 @@ PrefabInstance:
     - target: {fileID: 4418049690190814, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.099800445
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642468740499368, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9cb46cae144644c2b44b135b8562a8f, type: 3}

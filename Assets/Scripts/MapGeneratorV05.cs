@@ -78,23 +78,58 @@ namespace MapGeneratorNameSpace
 
 
 
-        public int Length => length; //=function getLength()
+        public int Length
+        {
+            get
+            {
+                return length; //=function getLength()
+            }
+        }
 
-        public int Height => height;
+        public int Height
+        {
+            get
+            {
+                return height;
+            }
+        }
 
-        public byte ChanceTrees => chanceTrees;
+        public byte ChanceTrees
+        {
+            get
+            {
+                return chanceTrees;
+            }
+        }
 
-        public byte ChanceStones => chanceStones;
+        public byte ChanceStones
+        {
+            get
+            {
+                return chanceStones;
+            }
+        }
 
-        public byte CityPercent => cityPercent;
+        public byte CityPercent
+        {
+            get
+            {
+                return cityPercent;
+            }
+        }
 
-        public byte ValueOfIteration => countOfIterations;
+        public byte ValueOfIteration
+        {
+            get
+            {
+                return countOfIterations;
+            }
+        }
     }
 
     public class MapGeneratorV05 : MonoBehaviour
     {
-        //private string[,] map;
-        private List<List<String>> map= new List<List<string>>();
+        public List<List<String>> map= new List<List<string>>();
         private System.Random rnd = new System.Random(); //во избежании ошибок создадим экземпляр 1 раз (для потокв нужно что-то другое)
         [SerializeField] private GenerateParams generateParams;
 
@@ -117,6 +152,11 @@ namespace MapGeneratorNameSpace
                 return map;
             }
         }
+
+        public void Start()   ////////------------
+        {
+            Generate();
+        }               ////////-------------
 
         public bool CheckInput()
         {
@@ -164,6 +204,7 @@ namespace MapGeneratorNameSpace
             int roadAndCityValue = (int)Math.Floor((chunkValue / 100d * GenerateParams.CityPercent)); //Количество чанков, выделенных для                                                                         
             int orientation = rnd.Next(0, 1000);  //0 - X (горизонталь), 1- Y (Вертикаль)
             orientation = orientation % 2;
+
             if (roadAndCityValue > 1)
             {
                 MakeCity(GenerateParams.Length, GenerateParams.Height, orientation, ref roadAndCityValue);
@@ -367,20 +408,18 @@ namespace MapGeneratorNameSpace
             ChanceRealizator(periodStones, 5, lengthLocal - 1, heightLocal - 1, chunkWay);
             ChanceRealizator(periodTrees, 6, lengthLocal - 1, heightLocal - 1, chunkWay);
 
-            StreamWriter sr = new StreamWriter("D://Test2.txt");
+            //StreamWriter sr = new StreamWriter("C://Test2.txt");
 
-            for (int Index = 0; Index < heightLocal; Index++)
-            {
-                for (int Index2 = 0; Index2 < lengthLocal; Index2++)
-                {
-                    sr.Write(chunkWay[Index2, Index]);
-                }
-                sr.WriteLine();
-            }
-            sr.Close();
+            //for (int Index = 0; Index < heightLocal; Index++)
+            //{
+            //    for (int Index2 = 0; Index2 < lengthLocal; Index2++)
+            //    {
+            //        sr.Write(chunkWay[Index2, Index]);
+            //    }
+            //    sr.WriteLine();
+            //}
+            //sr.Close();
 
-            //Map = new string[length, height];
-            //map = new List<List<string>>();
             WriteMap(lengthLocal - 1, heightLocal - 1, chunkWay, orientation);
         }
 
@@ -518,32 +557,48 @@ namespace MapGeneratorNameSpace
                         }
                     }
                 }
-                indexY += period; //можно по 1-й прибавлять
+                indexY += period;
             }
         }
 
         private void WriteMap(int maxX, int maxY, byte[,] chunkMass, int orientation)
         {
-            string[,] mapString = (orientation == 1) ? new string[maxX+1, maxY+1] : new string[maxY+1,maxX+1];
-            for (int indexY = 0; indexY <= maxY; indexY++)
+            byte[,] chunkMass2= (orientation == 1)? new byte[maxY + 1, maxX + 1]: new byte[maxX + 1, maxY + 1];
+
+            for (int x=0; x<=chunkMass2.GetLength(0)-1;x++) //транспонировать матрицу
             {
-                for (int indexX = 0; indexX <= maxX; indexX++)
+                for (int y=0; y<= chunkMass2.GetLength(1)-1; y++)
                 {
-                    int swopIndexX = (orientation == 1) ? indexX : indexY;
-                    int swopIndexY = (orientation == 1) ? indexY : indexX;
-                    switch (chunkMass[indexX, indexY])
+                    if (orientation == 1)
+                    {
+                        chunkMass2[x, y] = chunkMass[y, x];
+                    }
+                    else
+                    {
+                        chunkMass2[x, y] = chunkMass[x, y];
+                    }
+                }
+            }
+
+            string[,] mapString = (orientation == 1) ? new string[maxY+1, maxX+1] : new string[maxX+1,maxY+1];
+
+            for (int indexY = 0; indexY <= mapString.GetLength(1)-1; indexY++)
+            {
+                for (int indexX = 0; indexX <= mapString.GetLength(0)-1; indexX++)
+                {
+                    switch (chunkMass2[indexX, indexY])
                     {
                         case (5):
-                            mapString[swopIndexX, swopIndexY] = "Chunk_10_0_0_0_0";
+                            mapString[indexX, indexY] = "Chunk_10_0_0_0_0";
                             break;
                         case (6):
-                            mapString[swopIndexX, swopIndexY] = "Chunk_13_1_1_1_1";
+                            mapString[indexX, indexY] = "Chunk_13_1_1_1_1";
                             break;
                         case (0):
-                            mapString[swopIndexX, swopIndexY] = "Chunk_00_1_1_1_1";
+                            mapString[indexX, indexY] = "Chunk_00_1_1_1_1";
                             break;
                         default:
-                            WriyeRoadMap("Chunk", chunkMass[indexX, indexY], indexX, indexY, orientation, maxX, maxY, chunkMass, mapString);
+                            WriyeRoadMap("Chunk", chunkMass2[indexX, indexY], indexX, indexY, mapString.GetLength(0)-1, mapString.GetLength(1)-1, chunkMass2, mapString);
                             break;
                     }
 
@@ -567,12 +622,10 @@ namespace MapGeneratorNameSpace
                 }
             }
 
-           // gameObject.GetComponent<BuildMap>().StartBuildMap(map);
-
         }
 
         private void WriyeRoadMap(string prefix, byte byteId, int indexX, int indexY,
-            int orientation, int maxX, int maxY, byte[,] chunkMass, string[,] massString)
+             int maxX, int maxY, byte[,] chunkMass, string[,] massString)
         {
             int id = 1;  //id чанка, который пойдет в название файла
 
@@ -601,7 +654,8 @@ namespace MapGeneratorNameSpace
             {
                 if (chunkMass[indexX, indexY - 1] > 0 && chunkMass[indexX, indexY - 1] < 4)
                 {
-                    up = 1;
+                    //up = 1;
+                    down = 1;
                 }
             }
 
@@ -609,7 +663,8 @@ namespace MapGeneratorNameSpace
             {
                 if (chunkMass[indexX, indexY + 1] > 0 && chunkMass[indexX, indexY + 1] < 4)
                 {
-                    down = 1;
+                    //down = 1;
+                    up = 1;
                 }
             }
 
@@ -637,18 +692,40 @@ namespace MapGeneratorNameSpace
                 up = 1;
             }
 
-            //String file = $"{prefix}_0{id}_{left}_{right}_{down}_{up}"; //id - значение от 0 до 9 !!!
-            String file = $"{prefix}_0{id}_{left}_{right}_{down}_{up}"; //id - значение от 0 до 9 !!!
-
-            if (orientation == 1)
+            if (id==2 && down==1 && up==1 && right==0 && left == 0 || id == 2 && down == 0 && up == 0 && right == 1 && left == 1)
             {
-                massString[indexX, indexY] = file;
-                //dwr.Add(file);
+                int value = rnd.Next(0, 10);
+                value = value / 3;
+                if (value == 1)
+                {
+                    id = 5;
+                }
+                if (value == 2)
+                {
+                    id = 6;
+                }
             }
-            else
+
+            String file = $"{prefix}_0{id}_{left}_{right}_{down}_{up}"; //id - значение от 0 до 9 !!!
+            massString[indexX, indexY] = file;
+        }
+
+        public void convertMagistralName() //only after generate a map //for Vyacheslav II
+        {
+            for (int indexX=0; indexX<map.Count;indexX++)
             {
-                //dwr.Add(file);
-                massString[indexY, indexX] = file;
+                for(int indexY=0; indexY< map[indexX].Count; indexY++)
+                {
+                    string chunkName = String.Copy(map[indexX][indexY]);
+                    chunkName = chunkName.Remove(0,6);
+                    chunkName = chunkName.Remove(2, 8);
+                    int indexOfChunk = Convert.ToInt32(chunkName);
+                    if (indexOfChunk == 1)
+                    {
+                        Debug.Log(map[indexX][indexY]);
+                        map[indexX][indexY] = "Chunk_01_1_1_1_1";
+                    }
+                }
             }
         }
     }

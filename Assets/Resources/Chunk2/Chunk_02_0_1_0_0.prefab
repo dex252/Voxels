@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3732986940513396297}
   - component: {fileID: 8930544825986245190}
   - component: {fileID: 4741737450249921544}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3091622574949894368}
   - component: {fileID: 8559433891723047685}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road01A (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,10 +133,10 @@ BoxCollider:
   m_GameObject: {fileID: 778684242451198138}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 6.35, y: 0.3, z: 4.5}
-  m_Center: {x: 0, y: 0.15, z: 0}
+  m_Size: {x: 5.466368, y: 0.3, z: 4.5}
+  m_Center: {x: 0.44181612, y: 0.15, z: 0}
 --- !u!1 &1360240733319775605
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 4932352081633929347}
   - component: {fileID: 5532608073548314698}
   - component: {fileID: 324299730400408065}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,8 +226,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 9.945173}
+  m_Center: {x: 0.0000001838161, y: 0, z: -4.472588}
 --- !u!1 &3800067906704028550
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 4029483348891264057}
   - component: {fileID: 2482167405055383940}
   - component: {fileID: 8696380205962739384}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ BoxCollider:
   m_GameObject: {fileID: 3800067906704028550}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 5304682505464990159}
   - component: {fileID: 5410311588661162304}
   - component: {fileID: 4022083062761610808}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2783532835611867669}
   - component: {fileID: 5917361616115801596}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Road01A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,51 +437,7 @@ BoxCollider:
   m_GameObject: {fileID: 5617123553468854161}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.35, y: 0.3, z: 4.5}
-  m_Center: {x: 0, y: 0.15, z: 0}
---- !u!1 &7031834363748712599
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9221034492361835324}
-  - component: {fileID: 6007113227136600931}
-  m_Layer: 0
-  m_Name: Road01A (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 65
-  m_IsActive: 1
---- !u!4 &9221034492361835324
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7031834363748712599}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3083, y: 0.5, z: -0.007}
-  m_LocalScale: {x: 0.060000002, y: 0.5, z: 0.05}
-  m_Children: []
-  m_Father: {fileID: 6935830899778137097}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6007113227136600931
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7031834363748712599}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 6.35, y: 0.3, z: 4.5}
   m_Center: {x: 0, y: 0.15, z: 0}
@@ -497,9 +453,9 @@ GameObject:
   - component: {fileID: 5012164534567121843}
   - component: {fileID: 5092983729248502031}
   - component: {fileID: 9171061629383844102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chunk_02_0_1_0_0
-  m_TagString: Untagged
+  m_TagString: Chunk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,7 +473,6 @@ Transform:
   m_Children:
   - {fileID: 2783532835611867669}
   - {fileID: 3091622574949894368}
-  - {fileID: 9221034492361835324}
   - {fileID: 5918209608049642598}
   - {fileID: 3810425940694163516}
   m_Father: {fileID: 0}
@@ -592,7 +547,7 @@ GameObject:
   - component: {fileID: 6446391490086976200}
   - component: {fileID: 1960421165826655398}
   - component: {fileID: 3974506659404992232}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,6 +624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Billboard
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.044527393
@@ -699,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -744,6 +703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment_Road
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.49959758
@@ -774,7 +737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -795,6 +758,11 @@ PrefabInstance:
     - target: {fileID: 400000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10104794
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840279193110931923, guid: d80c7433031fdee44bf3910c4b046ce7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
