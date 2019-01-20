@@ -16,7 +16,7 @@ public class Shout2 : MonoBehaviour
     private RotateHead2 headScript;
     // private Transform bodyTransform;
     private Transform gunPitTransform;
-    public double time = 0;
+    private double time = 0;
     // Start is called before the first frame update
     void Start()
     {
