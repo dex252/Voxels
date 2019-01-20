@@ -59,9 +59,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17d1f4e68785db4da546213aa536622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchEffect: {fileID: 100004, guid: b46890100828db6429ff69c322b45893, type: 3}
   speed: 10
   damage: 1
   timeLife: 10
+  healthPointer: {fileID: 0}
 --- !u!54 &8063268395068835768
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BotShout : MonoBehaviour
 {
+    [SerializeField] GameObject shoutEffect;
+
     public GameObject tower;
     public GameObject builletPref;
     public GameObject gunPit;
@@ -37,6 +39,7 @@ public class BotShout : MonoBehaviour
     private void ShoutStart()
     {
         var buletPoint = Instantiate(builletPref, new Vector3(gunPitTransform.position.x, 1, gunPitTransform.position.z), Quaternion.identity).GetComponent<BulletScript2>();
+        Destroy(Instantiate(shoutEffect, gunPit.transform.position, Quaternion.FromToRotation(Vector3.forward, gunPit.transform.position)) as GameObject, 1f);
         towerScript.Remath();
         Vector3 rotationOfBuild = towerScript.lastRotate;
         buletPoint.FireProjectile(rotationOfBuild, "Bot");

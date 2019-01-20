@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034fff9973a40854c903c44fcc674ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shoutEffect: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
   tower: {fileID: 3456192528211545219}
   builletPref: {fileID: 8353831679610346163, guid: d87203edb937b84468d4956fd75bfb86,
     type: 3}
@@ -293,6 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bot: {fileID: 1323737855}
+  deathEffect: {fileID: 100002, guid: 6ecf76dc4f268d340b2666896a954bcc, type: 3}
 --- !u!1 &3456192528211545219
 GameObject:
   m_ObjectHideFlags: 0

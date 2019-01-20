@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shout : MonoBehaviour
 {
+    [SerializeField] GameObject shoutEffect;
+
     public BulletScript2 bulet;
     public GameObject body;
     public GameObject head;
@@ -43,7 +45,9 @@ public class Shout : MonoBehaviour
     {
         //  var buletPoint = Instantiate(builletPref, new Vector3(bodyTransform.position.x, 1, bodyTransform.position.z), Quaternion.identity).GetComponent<BulletScript2>();
         //Physics.IgnoreCollision(body.GetComponent<Collider>(), buletPoint.GetComponent<Collider>());
+
         var buletPoint = Instantiate(builletPref, new Vector3(gunPitTransform.position.x, 1, gunPitTransform.position.z), Quaternion.identity).GetComponent<BulletScript2>();
+        Destroy(Instantiate(shoutEffect, gunPit.transform.position, Quaternion.FromToRotation(Vector3.forward, gunPit.transform.position)) as GameObject, 1f);
         headScript.Remath();
         Vector3 rotationOfBuild = headScript.lastRotate;
         buletPoint.FireProjectile(rotationOfBuild, "Player1");//процедура скрипта в снаряте

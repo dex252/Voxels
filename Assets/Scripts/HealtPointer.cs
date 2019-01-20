@@ -7,15 +7,18 @@ public class HealtPointer : MonoBehaviour
 {
     [SerializeField] GameObject enemyTank;
     [SerializeField] Text text;
-    [SerializeField] Image lose;
+    [SerializeField] Image win;
+    [SerializeField] GameObject deathEffect;
 
     private int health;
     private bool endChecker;
+    private bool finalChecker;
     private HealtPointer enemyHealth;
 
     private void Start()
     {
-        lose.gameObject.SetActive(false);
+        finalChecker = false;
+        win.gameObject.SetActive(false);
         health = 100;
         text.text = "Health: " + health;
         endChecker = false;
@@ -27,10 +30,18 @@ public class HealtPointer : MonoBehaviour
         System.Random rand = new System.Random();
         health = health - rand.Next (15,25);
 
-        if (health <= 0 && enemyHealth.endChecker == false)
+        if (health <= 0 && enemyHealth.health > 0 && endChecker == false && enemyHealth.endChecker == false)
         {
-            health = 9999;
+            endChecker = true;
+            enemyHealth.WinGame();
             GameOver();
+        }
+        else
+        {
+            if (health <= 0 && enemyHealth.health <= 0 && enemyHealth.endChecker == true)
+            {
+                health = 9999;
+            }
         }
 
         text.text = "Health: " + health;
@@ -41,10 +52,18 @@ public class HealtPointer : MonoBehaviour
         System.Random rand = new System.Random();
         health = health - rand.Next(3, 10);
 
-        if (health <= 0 && enemyHealth.endChecker == false)
+        if (health <= 0 && enemyHealth.health > 0 && endChecker == false && enemyHealth.endChecker == false)
         {
-            health = 9999;
+            endChecker = true;
+            enemyHealth.WinGame();
             GameOver();
+        }
+        else
+        {
+            if (health <= 0 && enemyHealth.health <= 0 && enemyHealth.endChecker == true)
+            {
+                health = 9999;
+            }
         }
 
         text.text = "Health: " + health;
@@ -53,26 +72,37 @@ public class HealtPointer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.anyKey && endChecker == true)
+        if (Input.anyKey && finalChecker == true)
         {
             SceneManager.LoadScene("Menu");
         }
     }
+    
+    private void WinGame()
+    {
+        win.gameObject.SetActive(true);
+    }
+
     private void GameOver()
     {
-        lose.gameObject.SetActive(true);
+        DestroyAnimation();
         StartCoroutine(WaitLoadWin());
+    }
+
+    private void DestroyAnimation()
+    {
+        Destroy(Instantiate(deathEffect, transform.position, Quaternion.FromToRotation(Vector3.forward, transform.position)) as GameObject, 5f);
     }
 
     IEnumerator WaitLoadWin()
     {
-        for (int i = 0; i < 201; i++)
+        for (int i = 0; i < 251; i++)
         {
-            if (i == 200)
+            if (i == 250)
             {
-                endChecker = true;
+                finalChecker = true;
+                enemyHealth.finalChecker = true;
             }
-           
             yield return null;
         }
        

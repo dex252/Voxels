@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class BulletScript2 : MonoBehaviour
 {
+    [SerializeField] private GameObject touchEffect;
+
     public float speed;
     public int damage;
     public float timeLife;
     public HealtPointer healthPointer;
+
     private botHealth botHealth;
+    
 
     private string whoseBullet;
 
@@ -32,6 +36,7 @@ public class BulletScript2 : MonoBehaviour
         this.timeOfLiveBullet += Time.deltaTime;
         if (this.timeOfLiveBullet >= this.timeLife)
         {
+            Destroy(Instantiate(touchEffect, this.gameObject.transform.position, Quaternion.FromToRotation(Vector3.forward, this.gameObject.transform.position)) as GameObject, 4f);
             Destroy(this.gameObject);
             Debug.Log("Destroy bullet time");
         }
@@ -56,6 +61,7 @@ public class BulletScript2 : MonoBehaviour
                 Debug.Log("Touch player-player");
                 Debug.Log("Destroy bullet");
                 healthPointer.TakeDamage();
+                Destroy(Instantiate(touchEffect, this.gameObject.transform.position, Quaternion.FromToRotation(Vector3.forward, this.gameObject.transform.position)) as GameObject, 4f);
                 Destroy(this.gameObject);
             }
 
@@ -68,12 +74,14 @@ public class BulletScript2 : MonoBehaviour
                 healthPointer = enemy.GetComponent<HealtPointer>();
                 Debug.Log("Touch bot-player");
                 healthPointer.TakeSmallDamage();
+                Destroy(Instantiate(touchEffect, this.gameObject.transform.position, Quaternion.FromToRotation(Vector3.forward, this.gameObject.transform.position)) as GameObject, 4f);
                 Destroy(this.gameObject);
             }
         }
 
 
         Debug.Log("Destroy bullet");
+        Destroy(Instantiate(touchEffect, this.gameObject.transform.position, Quaternion.FromToRotation(Vector3.forward, this.gameObject.transform.position)) as GameObject, 4f);
         Destroy(this.gameObject);
     }
 
@@ -88,7 +96,8 @@ public class BulletScript2 : MonoBehaviour
             {
                 botHealth = enemy.GetComponent<botHealth>();
                 Debug.Log("Touch player-bot");
-                botHealth.TakeBotDamage();
+                botHealth.TakeBotDamage(enemy.transform.position);
+                Destroy(Instantiate(touchEffect, this.gameObject.transform.position, Quaternion.FromToRotation(Vector3.forward, this.gameObject.transform.position)) as GameObject, 4f);
                 Destroy(this.gameObject);
             }
         }
@@ -100,6 +109,7 @@ public class BulletScript2 : MonoBehaviour
             if (enemy.tag == "Bot")
             {
                 Debug.Log("Touch bot-bot");
+                Destroy(Instantiate(touchEffect, this.gameObject.transform.position, Quaternion.FromToRotation(Vector3.forward, this.gameObject.transform.position)) as GameObject, 4f);
                 Destroy(this.gameObject);
             }
         }
