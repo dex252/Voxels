@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MapGeneratorNameSpace;
+using PathFinderNameSpace;
 
 public class SpawnChunks : MonoBehaviour
 {
     [SerializeField] private float dist;
     [SerializeField] private GameObject loadScreen;
+
+    public GameObject bot;
 
     private MapGeneratorV05 t;
     private bool spawnSecurity=false;
@@ -15,7 +18,7 @@ public class SpawnChunks : MonoBehaviour
     {
         t = gameObject.GetComponent<MapGeneratorV05>();
         StartBuildMap(t.map);
-        loadScreen.SetActive(false);
+        StartCoroutine(spawn(new Vector3(0f, 0.515442f, 0)));
     }
 
 
@@ -33,5 +36,19 @@ public class SpawnChunks : MonoBehaviour
             }
         }
         t.convertMagistralName();
+    }
+
+    IEnumerator spawn(Vector3 spawnPoint)
+    {
+        for (int i = 0; i < 100; i++)
+        {
+        var botos = Instantiate(bot, spawnPoint, Quaternion.identity).GetComponent<PathFinder>();
+        botos.mapWay.GetChunkMap(t.map);
+            for (int y = 0; y < 500; y++)
+            {
+                yield return null;
+            }
+           
+        }
     }
 }

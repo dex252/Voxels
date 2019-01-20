@@ -9,17 +9,21 @@ public class BulletScript2 : MonoBehaviour
     public float timeLife;
     public HealtPointer healthPointer;
 
+    private string whoseBullet;
+
+
     private double timeOfLiveBullet = 0;
 
     private void Start()
     {
-    
+        whoseBullet = "";
     }
-    // Update is called once per frame
-    void FixedUpdate()
+
+    private void FixedUpdate()
     {
 
-        Vector3 newVelocity = this.transform.forward; //* (baseSpeed + currectVelocity.magnitude);
+        Vector3 newVelocity = this.transform.forward;
+
         newVelocity = newVelocity.normalized;
         newVelocity = newVelocity * speed * Time.deltaTime;
         this.transform.position += newVelocity;
@@ -30,23 +34,25 @@ public class BulletScript2 : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("Destroy bullet time");
         }
+
     }
 
-    public void FireProjectile(Vector3 rotation)
+    public void FireProjectile(Vector3 rotation, string whoseBullet)
     {
-        this.transform.rotation= Quaternion.Euler(rotation);
+        this.transform.rotation = Quaternion.Euler(rotation);
+        this.whoseBullet = whoseBullet;
     }
 
-    void OnCollisionEnter(Collision col)
+    private void OnCollisionEnter(Collision col)
     {
         GameObject enemy = col.gameObject;
 
-        if ( enemy.tag == "Player1" || enemy.tag == "Player2")
+        if (enemy.tag == "Player1" || enemy.tag == "Player2")
         {
             healthPointer = enemy.GetComponent<HealtPointer>();
             Debug.Log("Touch enemy");
             Debug.Log("Destroy bullet");
-            healthPointer.TakeDamage();
+            // healthPointer.TakeDamage();
             Destroy(this.gameObject);
         }
 

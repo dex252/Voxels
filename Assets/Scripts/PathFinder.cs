@@ -4,6 +4,7 @@ using UnityEngine;
 using Newtonsoft.Json;
 using System;
 using System.IO;
+using MapGeneratorNameSpace;
 
 namespace PathFinderNameSpace
 {
@@ -31,7 +32,9 @@ namespace PathFinderNameSpace
 
     public class MapWays
     {
-        private List<List<Chunk>> chunksMap;
+        public List<List<Chunk>> chunksMap;
+
+        int valueOfMultiplier;
 
         public List<List<Chunk>> ChunksMap
         {
@@ -46,17 +49,22 @@ namespace PathFinderNameSpace
             }
         }
 
+        public MapWays(int valueOfMultiplier)
+        {
+            this.valueOfMultiplier = valueOfMultiplier;
+        }
+
         public void GetChunkMap(List<List<string>> map)
         {
             ChunksMap = new List<List<Chunk>>();
-            for (int x = 0; x < map.Count; x++)
+            for (int y = 0; y < map.Count; y++)
             {
                 ChunksMap.Add(new List<Chunk>());
-                for (int y = 0; y < map[x].Count; y++)
+                for (int x = 0; x < map[y].Count; x++)
                 {
                     string infoFile = File.ReadAllText(Application.dataPath + "/Resources/ChunksInfo/" + map[x][y] + ".json");
-                    ChunksMap[x].Add(new Chunk());
-                    ChunksMap[x][y] = JsonConvert.DeserializeObject<Chunk>(infoFile);
+                    ChunksMap[y].Add(new Chunk());
+                    ChunksMap[y][x] = JsonConvert.DeserializeObject<Chunk>(infoFile);
                 }
             }
         }
@@ -103,6 +111,15 @@ namespace PathFinderNameSpace
         {
 
             List<Vector2> way = new List<Vector2>();
+            
+            if (start == finish)
+            {
+                way.Add(start);
+                way[0] = new Vector2(way[0].y * valueOfMultiplier, way[0].x * valueOfMultiplier);
+
+                return way;
+            }
+
             bfsChunkInf[,] bfsMatrix = new bfsChunkInf[ChunksMap.Count, ChunksMap[0].Count];
             for (int x = 0; x < ChunksMap.Count; x++)
             {
@@ -121,9 +138,12 @@ namespace PathFinderNameSpace
 
             while ((visitChunks.Count > 0) && (!isFind))
             {
+               
 
                 iteration++;
                 Vector2 visit = visitChunks[0];
+                //System.IO.File.AppendAllText(@"D:\logs.txt", "visit = " + visit + System.Environment.NewLine);
+
                 Chunk directChunk = chunksMap[(int)visit.x][(int)visit.y];
 
                 if (visit.y > 0 && directChunk.direction[0] == "1" &&
@@ -136,13 +156,13 @@ namespace PathFinderNameSpace
                 {
                     WaveCheck(visitChunks, bfsMatrix, finish, 0, 1, iteration, ref isFind);
                 }
-                if (visit.x < ChunksMap.Count - 1 && directChunk.direction[2] == "1" &&
-                    chunksMap[(int)visit.x + 1][(int)visit.y].direction[3] == "1")
+                if (visit.x < ChunksMap.Count - 1 && directChunk.direction[3] == "1" &&
+                    chunksMap[(int)visit.x + 1][(int)visit.y].direction[2] == "1")
                 {
                     WaveCheck(visitChunks, bfsMatrix, finish, 1, 0, iteration, ref isFind);
                 }
-                if (visit.x > 0 && directChunk.direction[3] == "1" &&
-                    chunksMap[(int)visit.x - 1][(int)visit.y].direction[2] == "1")
+                if (visit.x > 0 && directChunk.direction[2] == "1" &&
+                    chunksMap[(int)visit.x - 1][(int)visit.y].direction[3] == "1")
                 {
                     WaveCheck(visitChunks, bfsMatrix, finish, -1, 0, iteration, ref isFind);
                 }
@@ -165,6 +185,11 @@ namespace PathFinderNameSpace
             }
 
             way.Reverse();
+
+            for (int i = 0; i < way.Count; i++)
+            {
+                way[i] = new Vector2(way[i].y * valueOfMultiplier, way[i].x * valueOfMultiplier);
+            }
 
             return way;
         }
@@ -435,7 +460,12 @@ namespace PathFinderNameSpace
 
     public class PathFinder : MonoBehaviour
     {
-        public MapWays mapWay = new MapWays();
+        public MapWays mapWay;
+        public int valueOfMultiplier = 10;
 
+        public PathFinder()
+        {
+            mapWay = new MapWays(valueOfMultiplier);
+        }
     }
 }

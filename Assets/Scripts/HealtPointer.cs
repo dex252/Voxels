@@ -25,11 +25,12 @@ public class HealtPointer : MonoBehaviour
 
     public void TakeDamage()
     {
-        health = health - 25;
+        System.Random rand = new System.Random();
+        health = health - rand.Next (15,25);
 
-        if (health == 0 && enemyHealth.endChecker == false)
+        if (health <= 0 && enemyHealth.endChecker == false)
         {
-            health = 25;
+            health = 9999;
             GameOver();
         }
 
@@ -46,6 +47,20 @@ public class HealtPointer : MonoBehaviour
     private void GameOver()
     {
         lose.gameObject.SetActive(true);
-        endChecker = true;
+        StartCoroutine(WaitLoadWin());
+    }
+
+    IEnumerator WaitLoadWin()
+    {
+        for (int i = 0; i < 201; i++)
+        {
+            if (i == 200)
+            {
+                endChecker = true;
+            }
+           
+            yield return null;
+        }
+       
     }
 }

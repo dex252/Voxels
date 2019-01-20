@@ -18,7 +18,7 @@ public class RotateHead : MonoBehaviour
     void Start()
     {
         transformOfHead = this.GetComponent<Transform>();
-        lastRotate = new Vector3(0,0,0);
+        lastRotate = new Vector3(0, 0, 0);
         lastDirection = new Vector3(0, 0, 0);
     }
 
@@ -33,10 +33,11 @@ public class RotateHead : MonoBehaviour
         RaycastHit hit;
         Ray rayToFloor = cam.ScreenPointToRay(Input.mousePosition); //Узнаем точку соприкосновения от амеры до объекта 
         if (Physics.Raycast(rayToFloor, out hit, 100.0f, mask, QueryTriggerInteraction.Collide)) // стрельба засчитывается, если луч пересекает пол с заданным расстоянием в 100f
-        {                                                           Debug.DrawRay(rayToFloor.origin, rayToFloor.direction * 100.1f, Color.red, 2);
-            float curAngle = Mathf.Atan2(hit.point.x- this.transform.position.x, hit.point.z - this.transform.position.z) / Mathf.PI * 180;
+        {
+            Debug.DrawRay(rayToFloor.origin, rayToFloor.direction * 100.1f, Color.red, 2);
+            float curAngle = Mathf.Atan2(hit.point.x - this.transform.position.x, hit.point.z - this.transform.position.z) / Mathf.PI * 180;
             curAngle = (curAngle < 0) ? curAngle + 360 : curAngle;
-            Vector3 rotation= Vector3.Lerp(new Vector3(this.transform.rotation.eulerAngles.x, this.transform.rotation.eulerAngles.y, this.transform.rotation.eulerAngles.z), 
+            Vector3 rotation = Vector3.Lerp(new Vector3(this.transform.rotation.eulerAngles.x, this.transform.rotation.eulerAngles.y, this.transform.rotation.eulerAngles.z),
                                                                         new Vector3(this.transform.rotation.eulerAngles.x, curAngle, this.transform.rotation.eulerAngles.z), 0.1f);
             this.transform.rotation = Quaternion.Euler(rotation);
             this.lastDirection = new Vector3(hit.point.x - this.transform.position.x, this.transform.position.y, hit.point.z - this.transform.position.z);
@@ -68,6 +69,6 @@ public class RotateHead : MonoBehaviour
 
     public void Remath()
     {
-        lastRotate = new Vector3(this.transform.eulerAngles.x, this.transform.eulerAngles.y, this.transform.eulerAngles.z); 
+        lastRotate = new Vector3(this.transform.eulerAngles.x, this.transform.eulerAngles.y, this.transform.eulerAngles.z);
     }
 }

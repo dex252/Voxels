@@ -10,6 +10,9 @@ TagManager:
   - Chunk
   - Player1
   - Player2
+  - Tower1
+  - Tower2
+  - Bot
   layers:
   - Default
   - TransparentFX
