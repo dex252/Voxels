@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shout : MonoBehaviour
 {
     [SerializeField] GameObject shoutEffect;
+    public AudioClip[] clips;
 
     public BulletScript2 bulet;
     public GameObject body;
@@ -13,13 +14,15 @@ public class Shout : MonoBehaviour
     public GameObject gunPit;
     public double reloadTime;
 
+    private AudioSource audioSource;
     private RotateHead headScript;
-    // private Transform bodyTransform;
+    private System.Random rand = new System.Random();
     private Transform gunPitTransform;
     private double time = 0;
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         headScript = head.GetComponent<RotateHead>();
         //    bodyTransform= body.GetComponent<Transform>();
         gunPitTransform = gunPit.GetComponent<Transform>();
@@ -27,6 +30,11 @@ public class Shout : MonoBehaviour
 
     void Update()
     {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(clips[rand.Next(6)]);
+        }
+
         time += Time.deltaTime;
         //bool mouseButtonDown = Input.GetMouseButtonDown(0);
         //if (mouseButtonDown && time > reloadTime )
@@ -34,11 +42,13 @@ public class Shout : MonoBehaviour
         //    time = 0;
         //    ShoutStart();
         //}
+
         if (Input.GetKey(KeyCode.End) && time > reloadTime)
         {
             time = 0;
             ShoutStart();
         }
+
     }
 
     private void ShoutStart()

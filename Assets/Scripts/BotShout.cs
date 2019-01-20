@@ -34,6 +34,7 @@ public class BotShout : MonoBehaviour
             botShout.time = 0;
             botShout.ShoutStart();
         }
+
     }
 
     private void ShoutStart()

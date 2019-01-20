@@ -6,11 +6,12 @@ public class MenuController : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject player1;
     [SerializeField] private GameObject player2;
+
     private float timing = 1f;
     private bool isPaused;
-
     private void FixedUpdate()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape) && !isPaused && pauseMenu != null)
         {
             isPaused = true;    
@@ -49,5 +50,5 @@ public class MenuController : MonoBehaviour
         Application.Quit();
     }
 
-    
+   
 }

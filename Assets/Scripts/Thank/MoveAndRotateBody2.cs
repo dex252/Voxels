@@ -47,6 +47,7 @@ public class MoveAndRotateBody2 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
+
             if (traction == -1)
             {
                 localSpeed = 0;
@@ -68,6 +69,7 @@ public class MoveAndRotateBody2 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
+
             if (traction == 1)
             {
                 localSpeed = 0;
