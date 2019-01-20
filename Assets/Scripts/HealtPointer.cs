@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class HealtPointer : MonoBehaviour
 {
-    [SerializeField] GameObject myTank;
     [SerializeField] GameObject enemyTank;
     [SerializeField] Text text;
     [SerializeField] Image lose;
@@ -35,8 +34,23 @@ public class HealtPointer : MonoBehaviour
         }
 
         text.text = "Health: " + health;
-        Debug.Log($"{myTank.name} take damage");
     }
+
+    public void TakeSmallDamage()
+    {
+        System.Random rand = new System.Random();
+        health = health - rand.Next(3, 10);
+
+        if (health <= 0 && enemyHealth.endChecker == false)
+        {
+            health = 9999;
+            GameOver();
+        }
+
+        text.text = "Health: " + health;
+    }
+
+
     private void FixedUpdate()
     {
         if (Input.anyKey && endChecker == true)

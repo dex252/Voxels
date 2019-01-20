@@ -44,7 +44,7 @@ public class SpawnChunks : MonoBehaviour
         {
         var botos = Instantiate(bot, spawnPoint, Quaternion.identity).GetComponent<PathFinder>();
         botos.mapWay.GetChunkMap(t.map);
-            for (int y = 0; y < 500; y++)
+            for (int y = 0; y < 1000; y++)
             {
                 yield return null;
             }

@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\botHealth.cs" />
     <Compile Include="Assets\Scripts\BotShout.cs" />
     <Compile Include="Assets\Scripts\BuildMap.cs" />
     <Compile Include="Assets\Scripts\BulletScript.cs" />

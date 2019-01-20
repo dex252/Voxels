@@ -9,7 +9,7 @@ public class RoateGunBot : MonoBehaviour
 
     private ScanSphere scanSphere;
 
-    const float speedOfRotate = 3f;
+    const float speedOfRotate = 5f;
 
     Transform tower;
 
